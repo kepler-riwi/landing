@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Krona+One&display=swap"
+    rel="stylesheet">
+  <title>KEPLER</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo_kepler.png" width="150" alt="Logo de la pagina web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button
+                  class="btn nav-bar-button d-flex align-items-center">Inicio</a></button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button
+                  class="btn nav-bar-button d-flex align-items-center">Eventos</a></button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button
+                  class="btn nav-bar-button d-flex align-items-center">Galería</a></button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button
+                  class="btn nav-bar-button d-flex align-items-center">Contacto</a></button>
+            </li>
+          </ul>
+          <a href="#">
+            <i class="nav-login bi bi-person-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="./images/hero_img.jpg" alt="">
+    <div class="hero-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 d-flex flex-md-column text-start left">
+            <p class="hero-event-title">F1 ACCELERATE SUMMIT</p>
+            <p class="hero-event-text">Mayo - 4 - 2025    |    USD $1.800   |    LAS VEGAS - NEVADA</p>
+          </div>
+
+          <div class="col-md-4 d-flex flex-md-column text-center right">
+            <p class="hero-event-title">30% DESCUENTO</p>
+            <button class="btn btn-info hero-btn">Comprar Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION ULTIMAS NOTICIAS -->
+  <section class="news d-flex flex-column align-items-center">
+        <p class="news-title">ÚLTIMAS NOTICIAS</p>
+      <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/news_1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/news_2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/news_3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </section>
+
+  <!-- FORM -->
+    <section class="form">
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+  </section>
+
+  <!-- SECCION FOOTER -->
+  <section class="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+      <div class="col-md-4 footer-logo text-center">
+        <!-- LOGO -->
+        <img src="images/logo_kepler.png" width="150" alt="Logo de la pagina web">
+      </div>
+      <div class="col-md-4 footer-contact ">
+        <!-- CONTACTANOS -->
+        <p>Contáctanos:</p>
+        <p><i class="bi bi-telephone-fill"></i> +57 350 366 5587</p>
+        <p><i class="bi bi-envelope-fill"></i> informacion@kepler.com</p>
+      </div>
+      <div class="col-md-4  footer-social text-center">
+        <!-- SOCIAL MEDIA -->
+        <p>Síguenos en: </p>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
