@@ -1,0 +1,138 @@
+:root {
+  /* Colors */
+  --color-main: #090715;
+  --color-accent: #110832;
+  --color-neutral: #8F6EF3;
+  --color-dark: #050505;
+  --color-light: #ffffff;
+
+  /* Typography */
+  --heading-font: "Inknut Antiqua", serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* Font Size */
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+
+  /* SPACING */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Layouts */
+  --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+  --standard-transition: 2s ease-in-out;
+  --standard-border-radius: var(--spacing-sm);
+  --max-width: 85rem;
+}
+
+/* Lineas duplicadas en otros archivos css */
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to bottom, var(--color-neutral), var(--color-accent));
+    margin: 0 var(--spacing-md) var(--spacing-md) 0;
+    border-radius: var(--standard-border-radius);
+    cursor: pointer;
+}
+
+.cuadro:hover {
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-neutral));
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-main);
+    color: var(--color-light);
+}
+
+.galeria {
+    max-width: var(--max-width);
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.grid-galeria {
+    width: 100%;
+    min-height: 100vh;
+    gap: var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "a a b b c c"
+    "a a b b c c"
+    "a a d e j j"
+    "a a f g j j"
+    "h h i i j j"
+    "h h i i j j"
+    ;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--standard-border-radius);
+}
+
+.galeria-grande-izquierda {
+    grid-area: a;
+}
+
+.galeria-1 {
+    grid-area: b;
+}
+
+.galeria-2 {
+    grid-area: c;
+}
+
+.galeria-3 {
+    grid-area: d;
+}
+
+.galeria-4 {
+    grid-area: e;
+}
+
+.galeria-5 {
+    grid-area: f;
+}
+
+.galeria-6 {
+    grid-area: g;
+}
+
+.galeria-7 {
+    grid-area: h;
+}
+
+.galeria-8 {
+    grid-area: i;
+}
+
+.galeria-grande-derecha {
+    grid-area: j;
+}
