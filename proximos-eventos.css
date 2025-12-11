@@ -1,0 +1,155 @@
+:root {
+  /* Colors */
+  --color-main: #090715;
+  --color-accent: #110832;
+  --color-neutral: #8F6EF3;
+  --color-dark: #050505;
+  --color-light: #ffffff;
+
+  /* Typography */
+  --heading-font: "Inknut Antiqua", serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* Font Size */
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+
+  /* SPACING */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Layouts */
+  --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+  --standard-transition: 2s ease-in-out;
+  --standard-border-radius: var(--spacing-sm);
+  --max-width: 85rem;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    box-sizing: border-box;
+}
+
+a {
+    padding: var(--spacing-md);
+    background: linear-gradient(to bottom, var(--color-neutral), var(--color-accent));
+    border-radius: var(--standard-border-radius);
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+a:hover {
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-neutral));
+    cursor: pointer;
+}
+
+.section-flex-cards {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-light);   
+}
+
+.subtitulo-proximos-eventos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.fechas {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to bottom, var(--color-neutral), var(--color-accent));
+    margin: 0 var(--spacing-md) var(--spacing-md) 0;
+    border-radius: var(--standard-border-radius);
+    cursor: pointer;
+}
+
+.cuadro:hover {
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-neutral));
+
+}
+
+.card {
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--spacing-xl) 0 0 0 ;
+}
+
+.card-info {
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: var(--color-accent);
+    margin: 0 var(--spacing-lg) 0 0;
+    border-radius: var(--standard-border-radius);
+}
+
+.card-text {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.izquierda {
+    width: 50%;
+    padding: 0 0 0 var(--spacing-lg);
+}
+
+.derecha {
+    width: 50%;
+    padding: 0 var(--spacing-lg) 0 0;
+}
+
+ .pista {
+    width: 20%;
+    height: 35vh;
+    background: url(assets/pista.png) center/cover no-repeat;
+    border-radius: var(--standard-border-radius);
+}
+
+.pista:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.uno {
+    background: url(assets/card-1.jpg) center/cover no-repeat;
+}
+
+.dos {
+    background: url(assets/card-2.jpg) center/cover no-repeat;
+    margin: 0 0 0 var(--spacing-lg);
+}
+
+.tres {
+    background: url(assets/card-3.jpg) center/cover no-repeat;
+}
