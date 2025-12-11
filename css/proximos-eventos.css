@@ -132,7 +132,7 @@ a:hover {
  .pista {
     width: 20%;
     height: 35vh;
-    background: url(assets/pista.png) center/cover no-repeat;
+    background: url(../images/assets/pista.png) center/cover no-repeat;
     border-radius: var(--standard-border-radius);
 }
 
@@ -142,14 +142,14 @@ a:hover {
 }
 
 .uno {
-    background: url(assets/card-1.jpg) center/cover no-repeat;
+    background: url(../images/assets/card-1.jpg) center/cover no-repeat;
 }
 
 .dos {
-    background: url(assets/card-2.jpg) center/cover no-repeat;
+    background: url(../images/assets/card-2.jpg) center/cover no-repeat;
     margin: 0 0 0 var(--spacing-lg);
 }
 
 .tres {
-    background: url(assets/card-3.jpg) center/cover no-repeat;
+    background: url(../images/assets/card-3.jpg) center/cover no-repeat;
 }
