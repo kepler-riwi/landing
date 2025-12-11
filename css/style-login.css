@@ -1,0 +1,69 @@
+.bg-imagen{
+    background-image: url(../images/img-login.png);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.form-control{
+    background-color: transparent ;
+    color: white;
+    border-color: blueviolet;
+    box-shadow: none;
+
+}
+
+.form-control:focus{
+    background-color: transparent !important;
+    color: white;
+    border-color: blueviolet;
+    box-shadow: none;
+
+}
+
+.form-control::placeholder{
+    color: rgb(165, 93, 233);
+}
+
+.btn{
+    border-radius: 70px;
+    background-color: transparent;
+    border-color: blueviolet;
+    padding: 15px;
+    box-shadow: 1px 4px 10px #2d2352;
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    border-color: white;
+    color: black;
+}
+
+.col-md-6{
+    background-color: #110832;
+}
+
+.remind{
+    font-size: rem;
+}
+
+.form-control{
+    border-radius: 70px;
+    box-shadow: 1px 4px 10px #2d2352;
+}
+
+.fa-google , .fa-facebook-f{
+    color: white;
+    
+}
+
+.fa-google:hover, .fa-facebook-f:hover{
+    color: blueviolet;
+}
+
+.login{
+    border: 2px solid blueviolet;
+    padding: 3rem;
+    border-radius: 70px;
+    box-shadow: 10px 7px 10px #2d2352;
+}
