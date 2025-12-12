@@ -1,0 +1,179 @@
+/* --- BASE --- */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-wrapper {
+    background-color: #0b0521; /* Fondo oscuro principal */
+    min-height: 100vh;
+    padding: 20px 40px;
+    color: white;
+}
+
+/* --- NAVBAR SUPERIOR --- */
+.ticket-label {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    padding-left: 15px;
+}
+
+.top-nav-container {
+    background-color: #060214; /* Fondo negro contenedor navbar */
+    border-radius: 15px;
+    height: 70px; /* Altura fija para alineación */
+}
+
+/* Botones del Navbar (Cuadrado y Círculo) */
+.nav-btn {
+    background-color: #2e1a75;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #5832d6;
+}
+
+.square-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.circle-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Totalmente redondo */
+}
+
+/* Barra de Búsqueda Central */
+.search-container {
+    background-color: #2e1a75;
+    border-radius: 30px;
+    height: 40px;
+    width: 60%; /* Ocupa el espacio central */
+    padding: 0 10px;
+}
+
+.search-input {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- TÍTULO SECCIÓN --- */
+.section-badge {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(0,0,0,0.3);
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* --- ESTILOS DE TICKET --- */
+.corner {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255,255,255,0.8);
+    z-index: 2;
+}
+.top-left { top: -2px; left: -2px; border-right: 0; border-bottom: 0; }
+.bottom-right { bottom: -2px; right: -2px; border-left: 0; border-top: 0; }
+
+/* TICKET ARRIBA */
+.ticket-card-top {
+    background: linear-gradient(135deg, #4b1d96 0%, #1e0b4b 100%);
+    border: 1px solid #8a2be2;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.25);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 12px);
+}
+
+.label-text { font-weight: bold; color: #bbb; margin-right: 10px; }
+.value-text { font-weight: 300; }
+.highlight { color: white; font-weight: bold; text-shadow: 0 0 5px white; }
+
+/* TICKET ABAJO */
+.ticket-card-bottom {
+    background: linear-gradient(180deg, #3d147a 0%, #150835 100%);
+    border: 1px solid #8a2be2;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.25);
+}
+
+.ticket-header {
+    border-bottom: 1px solid rgba(138, 43, 226, 0.4);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.small-label {
+    color: #a55de9;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.total-amount {
+    color: white;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+.code-text {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #ccc;
+    letter-spacing: 2px;
+}
+
+/* --- BOTONES DE ACCIÓN (DERECHA) --- */
+.action-btn {
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.action-btn.square {
+    width: 130px;
+    height: 130px;
+    background-color: #180c38;
+    border: 2px solid #7b2cbf;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.action-btn.square:hover {
+    background-color: #7b2cbf;
+    transform: translateY(-3px);
+}
+
+.action-btn.pill {
+    background-color: #24125f;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 1rem;
+    min-width: 250px;
+}
+
+.action-btn.pill:hover {
+    background-color: #7b2cbf;
+}
