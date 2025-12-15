@@ -18,6 +18,23 @@
 </head>
 
 <body>
+<!-- Pagina de inicio -->
+ <div class="background">
+   <section class="inicio">
+     <header>
+       <!-- <a class="boton" href="">
+         <img src="images/assets/login.svg" alt="">
+        </a> -->
+      </header>
+      
+      <div class="title">
+        <h1>TICKET STORE</h1>
+      </div>
+      <div class="final">
+        <a class="boton" href="eventos-info.html">Comprar tickets</a>
+      </div>   
+    </section>
+  </div>
   <!-- Barra de navegacion -->
 
   <nav class="navbar navbar-expand-md">
@@ -37,15 +54,15 @@
                   class="btn nav-bar-button d-flex align-items-center">Inicio</a></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><button
+              <a class="nav-link" href="#eventos"><button
                   class="btn nav-bar-button d-flex align-items-center">Eventos</a></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><button
+              <a class="nav-link" href="#galeria"><button
                   class="btn nav-bar-button d-flex align-items-center">Galería</a></button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><button
+              <a class="nav-link" href="#contacto"><button
                   class="btn nav-bar-button d-flex align-items-center">Contacto</a></button>
             </li>
           </ul>
@@ -77,6 +94,111 @@
     </div>
   </section>
 
+
+  <!-- CATEGORIAS -->
+
+
+  <!-- EVENTOS -->
+<div class="proximos-eventos-max" id="eventos">
+
+  <section class="section-flex-cards">
+    <div class="subtitulo-proximos-eventos">
+      <img class="cuadro" src="images/assets/fecha.svg" alt="">
+      <h2>Proximos eventos</h2>
+    </div>
+    <div class="fechas">
+      <div class="cuadro">1</div>
+      <div class="cuadro">2</div>
+      <div class="cuadro">3</div>
+      <div class="cuadro">4</div>
+      <div class="cuadro">5</div>
+      <div class="cuadro">6</div>
+      <div class="cuadro">7</div>
+      <div class="cuadro">8</div>
+      <div class="cuadro">9</div>
+      <div class="cuadro">10</div>
+    </div>
+    
+    <!-- cards -->
+    
+    <div class="card">
+      <div class="card-info uno">
+        <div class="card-text">
+          
+          <div class="izquierda">
+            <h3>Carrera dahitona</h3>
+            <a class="boton" href="eventos-info.html">comprar</a>
+          </div>
+          <div class="derecha">
+            <h4>Acerca de la carrera</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore eum id beatae ratione cumque, minus quibusdam illo earum nesciunt consequatur deserunt cum sit est quasi architecto temporibus vitae maiores. Laudantium?</p>
+          </div>
+        </div>
+      </div>
+      <div class="pista">
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="pista"></div>
+      <div class="card-info dos">
+        <div class="card-text">
+          <div class="izquierda">
+            <h3>Carrera dahitona</h3>
+            <a class="boton" href="eventos-info.html">comprar</a>
+          </div>
+          <div class="derecha">
+            <h4>Acerca de la carrera</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore eum id beatae ratione cumque, minus quibusdam illo earum nesciunt consequatur deserunt cum sit est quasi architecto temporibus vitae maiores. Laudantium?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-info tres">
+        <div class="card-text">
+          
+          <div class="izquierda">
+            <h3>Carrera dahitona</h3>
+            <a class="boton" href="eventos-info.html">comprar</a>
+          </div>
+          <div class="derecha">
+            <h4>Acerca de la carrera</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore eum id beatae ratione cumque, minus quibusdam illo earum nesciunt consequatur deserunt cum sit est quasi architecto temporibus vitae maiores. Laudantium?</p>
+          </div>
+        </div>
+      </div>
+      <div class="pista">
+      </div>
+    </div>
+    
+  </section>
+</div>
+  
+  <!-- GALERIA -->
+  <div class="galeria-max" id="galeria">
+    <section class="galeria">
+      <div class="subtitulo-galeria">
+        <img class="cuadro" src="/images/assets/galeria.svg" alt="">
+        <h2>Galeria de imagenes</h2>
+      </div>
+      <section class="grid-galeria">
+        <img class="galeria-grande-izquierda" src="images/assets/galeria/galeria-grande-izquierda.avif" alt="">
+        <img class="galeria-1" src="images/assets/galeria/galeria-1.jpg" alt="">
+        <img class="galeria-2" src="images/assets/galeria/galeria-2.avif" alt="">
+      <img class="galeria-3" src="images/assets/galeria/galeria-1.jpg" alt="">
+      <img class="galeria-4" src="images/assets/galeria/galeria-3.jpeg" alt="">
+      <img class="galeria-5" src="images/assets/galeria/galeria-4.jpeg" alt="">
+      <img class="galeria-6" src="images/assets/galeria/galeria-5.jpg" alt="">
+      <img class="galeria-7" src="images/assets/galeria/galeria-5.jpg" alt="">
+      <img class="galeria-8" src="images/assets/galeria/galeria-6.jpg" alt="">
+      <img class="galeria-grande-derecha" src="images/assets/galeria/galeria-grande-derecha.jpg" alt="">
+    </section>
+    
+  </section>
+</div>
+  
   <!-- SECCION ULTIMAS NOTICIAS -->
   <section class="news d-flex flex-column align-items-center">
         <p class="news-title">ÚLTIMAS NOTICIAS</p>
@@ -129,7 +251,7 @@
         <!-- LOGO -->
         <img src="images/logo_kepler.png" width="150" alt="Logo de la pagina web">
       </div>
-      <div class="col-md-4 footer-contact ">
+      <div class="col-md-4 footer-contact " id="contacto">
         <!-- CONTACTANOS -->
         <p>Contáctanos:</p>
         <p><i class="bi bi-telephone-fill"></i> +57 350 366 5587</p>
