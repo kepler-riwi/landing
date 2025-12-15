@@ -1,6 +1,35 @@
+@import url(inicio.css);
+@import url(proximos-eventos.css);
+@import url(galeria.css);
+
+
 :root{
-    --navbar: #110832;
-    --nav-bar-button: #4B24DB;
+--navbar: #110832;
+--nav-bar-button: #4B24DB;
+
+/* Colores */
+--color-main: #090715;
+--color-accent: #110832;
+--color-neutral: #8F6EF3;
+--color-dark: #050505;
+--color-light: #ffffff;
+
+/* Tipografia */
+--heading-font: "Krona one", serif;
+--body-font: "Khand", sans-serif;
+
+/* Layout */
+--standard-border-radius: var(--spacing-sm);
+--max-width: 85rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: var(--body-font);
 }
 
 /* Nav Bar */

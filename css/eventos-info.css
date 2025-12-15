@@ -154,7 +154,11 @@ nav ul {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+<<<<<<< HEAD
     background: url(assets/card-1.jpg) center/cover no-repeat;
+=======
+    background: url(../images/assets/card-1.jpg) center/cover no-repeat;
+>>>>>>> index-ok
     margin: 0 var(--spacing-lg) 0 0;
     border-radius: var(--standard-border-radius);
 }
